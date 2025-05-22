@@ -1,0 +1,297 @@
+body{
+    background-color: black;
+    color: rgb(243, 237, 237);
+    margin: 0;
+}
+
+.fondo{
+    background-image: url(../imagenes/hero2.jpg);
+    background-size: cover;
+    background-position:top ;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+@media(max-width:480px){
+    .fondo{
+        background-image:url();
+        height: 500px;
+    }
+
+    #btnmenu{
+        display: block;
+        color: #fff;
+        background-color: transparent;
+        border: none;
+        padding: .5rem;
+        cursor: pointer;
+    }
+}
+
+.btnmenu{
+    padding: 1rem 0 0 1rem;
+}
+
+#btnmenu{
+    display: none;
+} 
+
+@media(max-width:480px){
+    .barra_navegacion{
+        gap: 0;
+        justify-content: space-between;
+        padding: 0 ;
+    }
+    .navegacion_principal{
+        flex-direction: column;
+        align-items: start;
+        width: 40%;
+        margin: auto;
+    }
+
+}
+
+
+.barra_navegacion{
+display: flex;
+gap: 200px;
+padding: 10px;
+margin-bottom: 20px;
+}
+
+.navegacion_principal{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 50%;
+}
+.navegacion_redes{
+    display: flex;
+    justify-content: space-evenly;
+    width: 30%;
+}
+
+a{
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+.contenido_header{
+    display: flex;
+    align-items: center;
+    height: 500px;
+    justify-content: space-between;
+    color: white;
+    padding: 0 25px;
+}
+h1{
+    text-transform: uppercase;
+    font-size: 55px;
+}
+
+h1 span{
+font-size: 30px;
+}
+.contenedor_principal{
+    display: flex;
+    width: 90%;
+    margin: 0 auto;
+    gap: 100px;
+}
+#main {
+    display: flex;
+    margin-top: 50px;
+    flex-direction: column;
+    gap: 100px;
+    width: 65%;
+}
+.img_receta img{
+    width: 100px;
+    object-fit: cover;
+    border-radius: 20px;
+}
+#main .btn_receta{
+    color: white;
+    margin-top: 20px;
+    display: inline-block;
+    padding: 25px;
+}
+
+.btn_receta{
+    background-color: #4caf50;
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.aside{
+    width: 35%;
+    margin-top: 50px;
+    background-color: gray;
+    padding: 20px;
+    border-radius: 20px;
+}
+.aside h3, #main h3{
+    text-transform: uppercase;
+    text-align: center;
+}
+aside div{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+}
+.aside ul{
+    text-decoration: none;
+}
+aside .btn_receta{
+    padding: 10px 0;
+    text-align: center;
+    width: 70%;
+    margin: 0 auto;
+}
+.footer{
+    background-color: rgb(253, 250, 250);
+    padding: 20px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    text-transform: capitalize;
+    font-size: 20px;
+    margin-top: 100px;
+}
+
+/* style para contacto*/
+
+.contenedor_contacto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+}
+
+.contenedor_formulario {
+    background-color: #1e1e1e;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    width: 100%;
+    max-width: 400px;
+    margin-top: 50px;
+}
+
+.contenedor_campo {
+    margin-bottom: 15px;
+}
+
+.contenedor_campo label {
+    font-size: 14px;
+    margin-bottom: 5px;
+    display: block;
+    color: #cccccc;
+}
+
+.contenedor_campo input,
+.contenedor_campo textarea{
+    width: 380px;
+    padding: 10px;
+    font-size: 14px;
+    border: 1px solid #333333;
+    border-radius: 4px;
+    background-color: #1e1e1e;
+    color: #ecf0f1;
+}
+
+.contenedor_campo textarea{
+    resize: vertical;
+    min-height: 100px; 
+}
+
+.contenedor_formulario button{
+    width: 100px;
+    padding: 12px;
+    background-color: #444444;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+
+    &:hover{
+        background-color: #333333;
+    }
+}
+
+.enviar{
+    border-radius: 10px;
+    background-color: #444444;
+}
+
+/* style recetas*/
+
+.fondo_recetas{
+    background-image: url(../imagenes/postre\ de\ maracuya.jfif);
+    background-size: cover;
+    background-position:top ;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+.fondo_recetas2{
+    background-image: url(../imagenes/postre3lechesC.jpg);
+    background-size: cover;
+    background-position:top ;
+    background-repeat: no-repeat;
+    height: 600px;
+}
+
+/* style nosotros*/
+
+.Yo {
+    font-size: 30px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+.Biografia {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    color: #ffffff;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); 
+    margin: 20px;
+    border-radius: 8px;
+    width: 80%;
+    margin: 0 auto;
+    border: double white 2px;
+}
+
+.foto {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    margin-right: 20px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contenido {
+    max-width: 600px;
+}
+
+.Margarita {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.lista {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.lista .listado {
+    margin: 5px 0;
+}
